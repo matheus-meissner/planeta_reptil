@@ -1,0 +1,444 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background: linear-gradient(#006600, #ffffcc);
+}
+
+.container {
+    max-width: 1250px;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    backdrop-filter: blur(5%);
+    border-bottom: 2px solid #003300;
+    /* border-radius: 9px; */
+    padding: 16px;
+    background-color: rgba(0, 51, 0, 0.5);
+}
+
+header h1 {
+    color: white;
+    float: left;
+    margin: 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    align-items: baseline;
+    padding-top: 8px;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    font-size: larger;
+    text-decoration: none;
+    color: white;
+    transition: filter 3s;
+}
+
+header nav ul li a:hover {
+    color: #ffffcc;
+    filter: hue-rotate(410deg);
+    
+}
+
+.menu img {
+    vertical-align: middle;
+    height: 30px;
+    margin-left: 17px;
+    transition: filter 3s, transform 0.3s;
+    margin-right: 17px;
+    padding-top: 5px;
+}
+
+.menu img:hover {
+    transform: scale(1.1);
+    filter: hue-rotate(410deg);
+    cursor: pointer;
+}
+
+.menu {
+    float: right;
+    display: inline-flex;
+}
+
+.sobre {
+    margin-top: 3em;
+}
+
+.sobre img {
+    float: left;
+    height: 400px;
+    margin-right: 1em;
+    border: 1px solid #ffffcc;
+    border-radius: 9px;
+}
+
+.texto_sobre h2, 
+.produtos h2 {
+    color: white;
+    font-size: x-large;
+    padding: 7px;
+}
+
+.texto_sobre p {
+    color: #ffffcc;
+    margin-top: 2em;
+}
+
+.produtos h2 {
+    margin-top: 2em;
+    margin-bottom: 17px;
+}
+
+.produtos .card {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.prod {
+    border: 1px solid #ffffcc;
+    border-radius: 9px;
+    margin-bottom: 20px;
+    padding: 10px;
+    width: calc(25% - 10px);
+}
+
+.prod img {
+    width: 100%;
+    border: 1px solid #ffffcc;
+    border-radius: 9px;
+    transition: transform 1s;
+}
+
+.prod img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+button {
+    background-color: #ffffcc;
+    color: #006600;
+    border: 1px solid #006600;
+    border-radius: 9px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: filter 3s, transform 0.5s;
+    width: 100%;
+}
+
+button:hover {
+    transform: scale(1.05);
+    filter: hue-rotate(410deg);
+}
+
+.descricao {
+    padding: 10px;
+    color: #003300;
+}
+
+.descricao h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5em;
+    backdrop-filter: blur(5%);
+    border-top: 1px solid #003300;
+    text-align: center;
+    padding: 17px 0;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+}
+
+footer p {
+    padding: 17px;
+}
+
+footer img {
+    height: 30px;
+    transition: filter 3s, transform 0.5s;
+}
+
+footer img:hover {
+    transform: scale(1.05);
+    filter: hue-rotate(410deg);
+}
+
+.aviso {
+    display: none;
+    border: 1px solid #ffffcc;
+    border-radius: 9px;
+    margin-top: 10px;
+    background-color: #003300;
+    color: #ffffcc;
+}
+
+.aviso p {
+    padding: 17px;
+    font-size: small;
+}
+
+/* cel phone */
+@media screen and (max-width: 640px) {
+    /* CABEÇALHO */
+    header .container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header h1 {
+        font-size: x-large;
+    }
+
+    header nav ul {
+        list-style: none;
+        padding: 0;
+        padding-top: 10px;
+    }
+        
+    header nav ul li a {
+        font-size: medium;
+        text-decoration: none;
+        color: white;
+        transition: filter 3s;
+    }
+    
+    header nav ul li a:hover {
+        color: #ffffcc;
+        filter: hue-rotate(410deg);
+        
+    }
+
+    .menu img {
+        margin-top: 10px;
+        vertical-align: bottom;
+        height: 35px;
+        margin-left: 20px;
+        transition: filter 3s, transform 0.3s;
+        margin-right: 10px;
+        padding-top: 5px;
+    }
+    
+    .menu img:hover {
+        transform: scale(1.1);
+        filter: hue-rotate(410deg);
+        cursor: pointer;
+    }
+
+    /* SOBRE A LOJA */
+
+    .sobre {
+        margin-top: 3em;
+    }
+    
+    .sobre img {
+        float: left;
+        height: 300px;
+        border: 1px solid #ffffcc;
+        border-radius: 9px;
+        margin-bottom: 1em;
+    }
+    
+    .texto_sobre h2, 
+    .produtos h2 {
+        color: white;
+        font-size: larger;
+        padding: 0;
+    }
+    
+    .texto_sobre p {
+        color: #ffffcc;
+        margin-top: 2em;
+        margin-bottom: 2em;
+    }
+
+    /* PETS */
+
+    #pets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .produtos {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .produtos h2 {
+        margin-bottom: 1em;
+    }
+    
+    .produtos .card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .prod {
+        border: 1px solid #ffffcc;
+        border-radius: 9px;
+        margin-bottom: 20px;
+        padding: 10px;
+        width: calc(100% - 10px);
+    }
+    
+    .prod img {
+        width: 100%;
+        border: 1px solid #ffffcc;
+        border-radius: 9px;
+        transition: transform 1s;
+    }
+    
+    .prod img:hover {
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+    
+    button {
+        background-color: #ffffcc;
+        color: #006600;
+        border: 1px solid #006600;
+        border-radius: 9px;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        transition: filter 3s, transform 0.5s;
+        width: 100%;
+    }
+    
+    button:hover {
+        transform: scale(1.05);
+        filter: hue-rotate(410deg);
+    }
+    
+    .descricao {
+        padding: 10px;
+        color: #003300;
+    }
+    
+    .descricao h3 {
+        margin-bottom: 10px;
+    }
+
+    .aviso {
+        display: none;
+        border: 1px solid #ffffcc;
+        border-radius: 9px;
+        margin-top: 10px;
+        background-color: #003300;
+        color: #ffffcc;
+    }
+    
+    .aviso p {
+        padding: 17px;
+        font-size: small;
+    }
+
+    footer ul {
+        list-style: none;
+        display: flex; /* Usa flexbox */
+        align-items: center; /* Centraliza verticalmente os itens da lista */
+        justify-content: center; /* Centraliza horizontalmente os itens da lista */
+        padding: 0; /* Remove o padding padrão */
+        margin: 0; /* Remove a margem padrão para alinhamento exato */
+        /* margin-right: 14px; */
+    }
+
+    footer ul li {
+        margin: 0 10px; /* Espaçamento horizontal entre os itens */
+    }
+    
+    footer img {
+        vertical-align: middle; /* Alinha imagens com outros elementos inline, como texto */
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+    /* SOBRE A LOJA */
+
+    .sobre {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .sobre img {
+        height: 590px;
+    }
+
+    .texto_sobre h2 {
+        margin-top: 1em;
+        padding: 0;
+    }
+
+    .texto_sobre p {
+        color: #ffffcc;
+        margin-top: 2em;
+    }
+
+    /* PETS */
+
+    .produtos h2 {
+        margin-bottom: 1em;
+    }
+    
+    .produtos .card {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    
+    .prod {
+        margin-bottom: 20px;
+        width: calc(50% - 10px);
+    }
+        
+    footer img {
+        height: 30px;
+        transition: filter 3s, transform 0.5s;
+        margin-bottom: 3px;
+    }
+}
