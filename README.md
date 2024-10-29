@@ -1,6 +1,5 @@
 # 🦎 Planeta Reptil 🦎
 
-**Descrição**  
 Planeta Reptil é um projeto desenvolvido para explorar o desenvolvimento web e suas ferramentas. Este repositório oferece uma página responsiva e de uso intuitivo.
 
 ## 📋 Tabela de Conteúdos
