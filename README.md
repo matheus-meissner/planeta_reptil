@@ -13,14 +13,14 @@ Planeta Reptil é um projeto desenvolvido para explorar o desenvolvimento web e 
 
 ## 🌐 Visão Geral
 
-Este projeto tem o objetivo de explorar o desenvolvimento web e suas ferramentas.
+Este projeto é uma loja online dedicada a répteis para criadores de animais exóticos. Desenvolvi o site utilizando tecnologias modernas como HTML, CSS, e JavaScript, focando em uma experiência de usuário simples e intuitiva, com um design atraente que reflete a identidade do negócio. A loja é totalmente responsiva, garantindo uma navegação fluida em dispositivos móveis e desktops..
 
 ## 🛠 Tecnologias Utilizadas
 
-- [Linguagem/Framework]
-- [Biblioteca]
-- [Banco de Dados]
-- [Ferramenta Adicional]
+- HTML;
+- CSS;
+- JavaScript;
+- Vercel;
 
 ## 💻 Uso
 
